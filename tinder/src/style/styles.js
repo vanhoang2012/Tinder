@@ -83,6 +83,7 @@ const Styles = StyleSheet.create({
     width: '80%',
     marginTop: 10,
   },
+  iconStyle: {height: 30, width: 30, marginTop: 5},
 });
 
 export default Styles;

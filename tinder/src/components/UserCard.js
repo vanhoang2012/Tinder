@@ -155,57 +155,57 @@ class UserCard extends Component {
           <View style={Styles.row}>
             <TouchableOpacity
               style={{
-                borderTopWidth: this.state.tab === 0 ? 1 : 0,
+                borderTopWidth: this.state.tab === 0 ? 2 : 0,
                 borderTopColor: this.state.tab === 0 ? 'blue' : 'black',
               }}
               onPress={() => this.chooseTab(0)}>
               <Image
                 source={this.state.tab === 0 ? personActive : person}
-                style={{height: 30, width: 30}}
+                style={Styles.iconStyle}
               />
             </TouchableOpacity>
             <TouchableOpacity
               style={{
-                borderTopWidth: this.state.tab === 1 ? 1 : 0,
+                borderTopWidth: this.state.tab === 1 ? 2 : 0,
                 borderTopColor: this.state.tab === 1 ? 'blue' : 'black',
               }}
               onPress={() => this.chooseTab(1)}>
               <Image
                 source={this.state.tab === 1 ? genderActive : gender}
-                style={{height: 30, width: 30}}
+                style={Styles.iconStyle}
               />
             </TouchableOpacity>
             <TouchableOpacity
               style={{
-                borderTopWidth: this.state.tab === 2 ? 1 : 0,
+                borderTopWidth: this.state.tab === 2 ? 2 : 0,
                 borderTopColor: this.state.tab === 2 ? 'blue' : 'black',
               }}
               onPress={() => this.chooseTab(2)}>
               <Image
                 source={this.state.tab === 2 ? addressActive : address}
-                style={{height: 30, width: 30}}
+                style={Styles.iconStyle}
               />
             </TouchableOpacity>
             <TouchableOpacity
               style={{
-                borderTopWidth: this.state.tab === 3 ? 1 : 0,
+                borderTopWidth: this.state.tab === 3 ? 2 : 0,
                 borderTopColor: this.state.tab === 3 ? 'blue' : 'black',
               }}
               onPress={() => this.chooseTab(3)}>
               <Image
                 source={this.state.tab === 3 ? phoneActive : phone}
-                style={{height: 30, width: 30}}
+                style={Styles.iconStyle}
               />
             </TouchableOpacity>
             <TouchableOpacity
               style={{
-                borderTopWidth: this.state.tab === 4 ? 1 : 0,
+                borderTopWidth: this.state.tab === 4 ? 2 : 0,
                 borderTopColor: this.state.tab === 4 ? 'blue' : 'black',
               }}
               onPress={() => this.chooseTab(4)}>
               <Image
                 source={this.state.tab === 4 ? emailActive : email}
-                style={{height: 30, width: 30}}
+                style={Styles.iconStyle}
               />
             </TouchableOpacity>
           </View>

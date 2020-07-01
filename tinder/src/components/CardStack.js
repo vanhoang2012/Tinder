@@ -14,8 +14,8 @@ export default class CardStack extends Component {
   }
 
   componentWillMount() {
-    // Load three user make good performance
-    for (let i = 0; i < 3; i++) {
+    // Load two user make good performance
+    for (let i = 0; i < 2; i++) {
       this.handleAdd();
     }
   }
