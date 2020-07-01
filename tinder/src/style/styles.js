@@ -20,7 +20,7 @@ const Styles = StyleSheet.create({
     justifyContent: 'center',
   },
   card: {
-    height: 400,
+    height: 420,
     width: 350,
     borderWidth: 1,
     borderColor: 'lightgrey',

@@ -15,6 +15,17 @@ import Styles from '../style/styles';
 import {STORAGE_KEY} from '../configs/constant';
 import {addToFavourite} from '../redux/actions/DataActions';
 
+const person = require('../assets/images/person.png');
+const personActive = require('../assets/images/person_active.png');
+const gender = require('../assets/images/gender.png');
+const genderActive = require('../assets/images/gender_active.png');
+const address = require('../assets/images/address.png');
+const addressActive = require('../assets/images/address_active.png');
+const phone = require('../assets/images/phone.png');
+const phoneActive = require('../assets/images/phone_active.png');
+const email = require('../assets/images/email.png');
+const emailActive = require('../assets/images/email_active.png');
+
 class UserCard extends Component {
   constructor(props) {
     super(props);
@@ -148,9 +159,10 @@ class UserCard extends Component {
                 borderTopColor: this.state.tab === 0 ? 'blue' : 'black',
               }}
               onPress={() => this.chooseTab(0)}>
-              <Text style={{color: this.state.tab === 0 ? 'blue' : 'black'}}>
-                User
-              </Text>
+              <Image
+                source={this.state.tab === 0 ? personActive : person}
+                style={{height: 30, width: 30}}
+              />
             </TouchableOpacity>
             <TouchableOpacity
               style={{
@@ -158,9 +170,10 @@ class UserCard extends Component {
                 borderTopColor: this.state.tab === 1 ? 'blue' : 'black',
               }}
               onPress={() => this.chooseTab(1)}>
-              <Text style={{color: this.state.tab === 1 ? 'blue' : 'black'}}>
-                Gender
-              </Text>
+              <Image
+                source={this.state.tab === 1 ? genderActive : gender}
+                style={{height: 30, width: 30}}
+              />
             </TouchableOpacity>
             <TouchableOpacity
               style={{
@@ -168,9 +181,10 @@ class UserCard extends Component {
                 borderTopColor: this.state.tab === 2 ? 'blue' : 'black',
               }}
               onPress={() => this.chooseTab(2)}>
-              <Text style={{color: this.state.tab === 2 ? 'blue' : 'black'}}>
-                Address
-              </Text>
+              <Image
+                source={this.state.tab === 2 ? addressActive : address}
+                style={{height: 30, width: 30}}
+              />
             </TouchableOpacity>
             <TouchableOpacity
               style={{
@@ -178,9 +192,10 @@ class UserCard extends Component {
                 borderTopColor: this.state.tab === 3 ? 'blue' : 'black',
               }}
               onPress={() => this.chooseTab(3)}>
-              <Text style={{color: this.state.tab === 3 ? 'blue' : 'black'}}>
-                Phone
-              </Text>
+              <Image
+                source={this.state.tab === 3 ? phoneActive : phone}
+                style={{height: 30, width: 30}}
+              />
             </TouchableOpacity>
             <TouchableOpacity
               style={{
@@ -188,9 +203,10 @@ class UserCard extends Component {
                 borderTopColor: this.state.tab === 4 ? 'blue' : 'black',
               }}
               onPress={() => this.chooseTab(4)}>
-              <Text style={{color: this.state.tab === 4 ? 'blue' : 'black'}}>
-                Email
-              </Text>
+              <Image
+                source={this.state.tab === 4 ? emailActive : email}
+                style={{height: 30, width: 30}}
+              />
             </TouchableOpacity>
           </View>
         </View>
